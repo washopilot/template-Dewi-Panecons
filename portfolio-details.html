@@ -41,7 +41,6 @@
     <script type="text/javascript" src="assets/vendor/nanogallery/jquery.min.js"></script>
     <link href="assets/vendor/nanogallery/nanogallery2.min.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="assets/vendor/nanogallery/jquery.nanogallery2.min.js"></script>
-
   </head>
 
   <body>
@@ -131,8 +130,21 @@
                 id="mi_galeria"
                 data-nanogallery2='{
                 "itemsBaseURL": "assets/img/portfolio/",
-                "thumbnailHeight": "200",
-                "thumbnailWidth": "auto",
+
+                "galleryMosaic" : [                 
+                { "w": 6, "h": 4, "c": 1, "r": 1 },
+                { "w": 2, "h": 2, "c": 1, "r": 5 },
+                { "w": 3, "h": 1, "c": 3, "r": 5 },
+                { "w": 1, "h": 1, "c": 6, "r": 5 },
+                { "w": 1, "h": 1, "c": 3, "r": 6 },
+                { "w": 3, "h": 1, "c": 4, "r": 6 }
+                
+              ],
+                "galleryMaxRows": "1",
+                "galleryDisplayMode": "rows",
+
+                "thumbnailHeight": "100",
+                "thumbnailWidth": "100",
                 "thumbnailLabel": {
                   "position": "overImageOnBottom",
                   "display": false
